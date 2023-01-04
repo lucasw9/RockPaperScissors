@@ -6,21 +6,37 @@
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-
-    <div id="wrapper">
-        <button id="buttonRock">Rock</button>
-        <button id="buttonPaper">Paper</button>
-        <button id="buttonScissors">Scissors</button>
+    <div class="score">
+        <h1 class="ties">Ties: 0</h1>
     </div>
+    <div class="winnerDiv">
+        <button class="reset" onclick="resetGame()">Play Again?</button>
+    </div>
+    <div class="playerSelection">
+        <h3 class="playerChoice"></h3>
+        <h3 class="playerScore">Score: 0</h3>
+        <div class="playerImgs">
+            <img src="./images/rock.png" alt="Rock" class="pImg" id="rock">
+            <img src="./images/paper.png" alt="Paper" class="pImg" id="Paper">
+            <img src="./images/scissors.png" alt="Scissors" class="pImg" id="scissors">
+        </div>
+        <div class="computerSelection">
+            <h3 class="computerChoice"></h3>
+            <h3 class="computerScore">Score: 0</h3>
+            <div class="computerImgs">
+                <img src="./images/rock.png" alt="Rock" class="rock">
+                <img src="./images/paper.png" alt="Paper" class="paper">
+                <img src="./images/scissors.png" alt="Scissors" class="scissors">
+            </div>
+        </div>
 
 
-
-
-    <script src="index.js"></script>
+        <script src="index.js"></script>
 </body>
 
 </html>
